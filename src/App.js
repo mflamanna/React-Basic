@@ -1,21 +1,17 @@
 import './App.css';
+import Header from './Header';
+import Search from './Search';
+import PokemonList from './PokemonList';
 
-function App({image, name, type}) {
+function App() {
+
   return (
-      <main className="list-pokemons">
-        <article className="list-pokemons-item">
-          <div className="list-pokemons-item-content">
-            <img
-              src={image}
-              alt="pokemon-1"
-            ></img>
-            <h3>
-              {name}
-              <span>{type}</span>
-            </h3>
-          </div>
-        </article>
-      </main>
+    <div className="container">
+      <Header/>
+      <Search/>
+      <PokemonList/>
+    </div>
+
   );
 }
 

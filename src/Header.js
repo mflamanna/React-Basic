@@ -2,7 +2,7 @@ import './App.css';
 
 function Header() {
     return (
-      <div className="container">
+      <>
         <header className="header">
           <div className="header-bg"></div>
           <img
@@ -11,7 +11,7 @@ function Header() {
             alt="pokemon-logo"
           ></img>
         </header>
-      </div>
+      </>
     );
   }
   
