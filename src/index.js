@@ -2,16 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Header from './Header';
+import Search from './Search';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <Search />
+    <App name = "Bulbasaur" type="Gras" image= "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" />
+    <App name = "Ivysaur" type="Gras" image= "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" />
+    <App name = "Venusaur" type="Gras" image= "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" />
+    <App name = "Charmander" type="Fire" image= "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png" />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
